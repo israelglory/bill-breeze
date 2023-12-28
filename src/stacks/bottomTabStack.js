@@ -4,6 +4,8 @@ import { View, Platform } from 'react-native';
 import HomeScreen from '../screens/home';
 import ProfileScreen from '../screens/profile';
 import Icon from 'react-native-vector-icons/AntDesign';
+import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import HistoryScreen from '../screens/history';
 
 
 const Tab = createBottomTabNavigator();
@@ -43,7 +45,29 @@ function TabStack() {
                         return (
                             <Icon
                                 name={iconName}
-                                size={30}
+                                size={25}
+                                color={color}
+                            />
+                        );
+                    }
+
+                }} />
+
+            <Tab.Screen
+                name="HistoryStack"
+                component={HistoryScreen}
+                options={{
+                    tabBarLabel: 'History',
+                    headerShown: false,
+                    tabBarIcon: ({ focused, color, size }) => {
+                        let iconName;
+                        iconName = focused
+                            ? 'history'
+                            : 'history';
+                        return (
+                            <MaterialIcon
+                                name={iconName}
+                                size={25}
                                 color={color}
                             />
                         );
@@ -65,7 +89,7 @@ function TabStack() {
                         return (
                             <Icon
                                 name={iconName}
-                                size={30}
+                                size={25}
                                 color={color}
                             />
                         );
