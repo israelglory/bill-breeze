@@ -49,9 +49,7 @@ const styles = StyleSheet.create({
     amountText: {
         fontSize: 28,
         color: '#fff',
-        // Add additional styling as needed
     },
-    // Define styles for any other elements or icons you have
 });
 
 export default HomeAmountContainer;
