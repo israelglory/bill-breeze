@@ -44,18 +44,18 @@ const HomeScreen = ({ navigation }) => {
             </Text>
             <Spacer height={10} />
             <View style={{ ...styles.row, ...styles.spaceBetween }}>
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Wallet" icon={wallet} />
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Top Up" icon={phone} />
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Tv Cable" icon={tvCable} />
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Gift" icon={gift} />
+                <HomeCategory onPress={() => navigation.navigate('wallet')} title="Wallet" icon={wallet} />
+                <HomeCategory onPress={() => navigation.navigate('topUp')} title="Top Up" icon={phone} />
+                <HomeCategory onPress={() => navigation.navigate('tvCable')} title="Tv Cable" icon={tvCable} />
+                <HomeCategory onPress={() => navigation.navigate('gift')} title="Gift" icon={gift} />
             </View>
 
             <Spacer height={30} />
             <View style={{ ...styles.row, ...styles.spaceBetween }}>
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Deposit" icon={deposit} />
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Power" icon={power} />
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Bet" icon={bet} />
-                <HomeCategory onPress={() => navigation.navigate('Airtime')} title="Sms" icon={sms} />
+                <HomeCategory onPress={() => navigation.navigate('deposit')} title="Deposit" icon={deposit} />
+                <HomeCategory onPress={() => navigation.navigate('power')} title="Power" icon={power} />
+                <HomeCategory onPress={() => navigation.navigate('bet')} title="Bet" icon={bet} />
+                <HomeCategory onPress={() => navigation.navigate('sms')} title="Sms" icon={sms} />
             </View>
         </View>
     );

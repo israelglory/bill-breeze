@@ -4,7 +4,7 @@ import {
     View,
     Text,
     Image,
-    TouchableHighlight,
+    TouchableOpacity,
 } from 'react-native';
 //import { logo } from '../constants/images';
 import { primaryColor } from '../constants/colors';
@@ -13,8 +13,7 @@ import Spacer from './Spacer';
 
 const HomeCategory = ({ onPress, title, icon }) => {
     return (
-        <TouchableHighlight onPress={() => onPress()}>
-
+        <TouchableOpacity onPress={() => onPress()}>
             <View style={styles.column}>
                 <View style={styles.iconContainer}>
                     <Image source={icon} style={styles.iconStyle} />
@@ -23,7 +22,7 @@ const HomeCategory = ({ onPress, title, icon }) => {
                 <Text style={styles.amountText}>{title}</Text>
             </View>
 
-        </TouchableHighlight>
+        </TouchableOpacity>
     );
 }
 
